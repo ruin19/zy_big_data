@@ -13,5 +13,10 @@ BOT_NAME = 'zy'
 SPIDER_MODULES = ['zy.spiders']
 NEWSPIDER_MODULE = 'zy.spiders'
 
+ITEM_PIPELINES = {    
+    'zy.pipelines.ZyPipeline': 800,
+    'zy.otherPipeline.OtherPipeline': 800,
+}
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'zy (+http://www.yourdomain.com)'
